@@ -7,7 +7,7 @@
 import java.text.DecimalFormat;
 
 
-public class Matrix {
+public class Matrix{
     private double[][] array;
     private int rowNumber;
     private int colNumber;
@@ -69,111 +69,4 @@ public class Matrix {
             System.out.println();
         }
     }
-
-    /*
-
-    public static void print(Matrix A, double[] b, double[] x) {
-        System.out.println("Deine Koeffizientenmatrix ist:");
-        for (int i = 0; i < A.getRowNumber(); i++) {
-            for (int j = 0; j < A.getColNumber(); j++) {
-                System.out.printf("%8.2f", A.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nDein Vektor b ist:");
-        for (double value : b) {
-            System.out.printf("%8.2f", value);
-        }
-        System.out.println();
-
-        System.out.println("\nDie Lösung x lautet:");
-        for (double value : x) {
-            System.out.printf("%8.2f", value);
-        }
-        System.out.println();
-    }
-
-
-    public static void print(Matrix A, Matrix B, Matrix result) {
-        System.out.println("Die Matrix A ist:");
-        for (int i = 0; i < A.getRowNumber(); i++) {
-            for (int j = 0; j < A.getColNumber(); j++) {
-                System.out.printf("%8.2f", A.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nDie Matrix B ist:");
-        for (int i = 0; i < B.getRowNumber(); i++) {
-            for (int j = 0; j < B.getColNumber(); j++) {
-                System.out.printf("%8.2f", B.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nDas Ergebnis ist:");
-        for (int i = 0; i < result.getRowNumber(); i++) {
-            for (int j = 0; j < result.getColNumber(); j++) {
-                System.out.printf("%8.2f", result.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-    }
-
-
-    public static void print(Matrix A, double scalar, Matrix result) {
-        System.out.println("Die Matrix A ist:");
-        for (int i = 0; i < A.getRowNumber(); i++) {
-            for (int j = 0; j < A.getColNumber(); j++) {
-                System.out.printf("%8.2f", A.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nDer Skalar ist:");
-        System.out.printf("%8.2f", scalar);
-        System.out.println();
-
-        System.out.println("\nDas Ergebnis ist:");
-        for (int i = 0; i < result.getRowNumber(); i++) {
-            for (int j = 0; j < result.getColNumber(); j++) {
-                System.out.printf("%8.2f", result.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-    }
-
-    public static void print(Matrix A, Matrix B) {
-        System.out.println("Deine Matrix ist:");
-        for (int i = 0; i < A.getRowNumber(); i++) {
-            for (int j = 0; j < A.getColNumber(); j++) {
-                System.out.printf("%8.2f", A.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nDas Ergebnis ist:");
-        for (int i = 0; i < B.getRowNumber(); i++) {
-            for (int j = 0; j < B.getColNumber(); j++) {
-                System.out.printf("%8.2f", B.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-    }
-
-    public static void print(Matrix A, double k) {
-        System.out.println("Deine Matrix ist:");
-        for (int i = 0; i < A.getRowNumber(); i++) {
-            for (int j = 0; j < A.getColNumber(); j++) {
-                System.out.printf("%8.2f", A.getArray()[i][j]);
-            }
-            System.out.println();
-        }
-
-        System.out.println("\n Das Ergebnis ist: " + k);
-        }
-
-        */
-
 }

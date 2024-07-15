@@ -52,8 +52,4 @@ abstract class Check {
         else { throw new IllegalArgumentException("Die Matrix muss quadratisch sein."); }
 
     }
-
-
-
-
 }

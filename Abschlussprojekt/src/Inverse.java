@@ -4,7 +4,7 @@
  */
 
 
-public class Inverse {
+abstract class Inverse {
 
     // Bestimmt die Inverse I einer invertierbaren Matrix A
     // Die Einträge der Inversen I sind aufgerundet auf zwei Nachkommastellen

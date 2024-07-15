@@ -5,14 +5,6 @@ import java.util.Arrays;
  Pierantonio La Ferrera, 4162672
  */
 
-/*
-_____________________________________
-         README
-_____________________________________
-
-
-*/
-
 public class Demo {
     public static void main(String[] args) {
 
@@ -25,29 +17,27 @@ public class Demo {
         double[][] c = {{42, 42, 42}, {43, 43, 43}, {44, 44, 44}, {45, 45, 45}};
         double[][] d = {{1, 2, 3}, {1, 5, 6}, {7, 10, 9}};
 
-
-
         // 3x3 Beispielmatrix
-        System.out.println("Nicht invertierbare 3x3 Beispielmatrix");
+        System.out.println("Nicht invertierbare 3x3 Beispielmatrix A");
         Matrix A = new Matrix(a);
-        A.print();
-        System.out.println();
-
-        System.out.println("Invertierbare 3x3 Beispielmatrix");
-        Matrix D = new Matrix(d);
         A.print();
         System.out.println();
 
         // 3x4 Beispielmatrix
         Matrix B = new Matrix(b);
-        System.out.println("3x4 Beispielmatrix");
+        System.out.println("3x4 Beispielmatrix B");
         B.print();
         System.out.println();
 
         // 4x3 Beispielmatrix
         Matrix C = new Matrix(c);
-        System.out.println("4x3 Beispielmatrix");
+        System.out.println("4x3 Beispielmatrix C");
         C.print();
+        System.out.println();
+
+        System.out.println("Invertierbare 3x3 Beispielmatrix D");
+        Matrix D = new Matrix(d);
+        A.print();
         System.out.println();
 
         //
@@ -101,7 +91,7 @@ public class Demo {
 
 
         /*
-        Zusatzfeature: Lösung eines LGS bestimmen
+        Zusatzfeature: Lösung eines quadratischen LGS bestimmen
 
         Gegeben folgendes Beispiel-LGS:
 
@@ -117,6 +107,5 @@ public class Demo {
 
         System.out.println("Lösung des LGS: " + Arrays.toString(Lösung));
         System.out.println();
-
-    }
+     }
     }

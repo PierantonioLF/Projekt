@@ -1,4 +1,4 @@
-public class Operation {
+abstract class Operation {
 
     /**
      Christian Leroy, 6504373
@@ -22,7 +22,6 @@ public class Operation {
         }
         return Result;
     }
-
 
     // Addiert zwei Matrizen A und B, falls sie von identischer Größe sind
     // A ist m x n - Matrix und B ist m x n - Matrix => A + B ist m x n - Matrix

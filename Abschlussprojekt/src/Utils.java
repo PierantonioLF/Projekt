@@ -4,7 +4,7 @@
  */
 
 
-public class Utils {
+abstract class Utils {
 
 
     // --------------------------

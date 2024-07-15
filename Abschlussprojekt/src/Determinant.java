@@ -3,7 +3,7 @@
  Pierantonio La Ferrera, 4162672
  */
 
-public class Determinant {
+abstract class Determinant {
 
 
     // _____________________________________
@@ -78,21 +78,6 @@ public class Determinant {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

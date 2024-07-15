@@ -3,7 +3,7 @@
  Pierantonio La Ferrera, 4162672
  */
 
-public class SLE {
+abstract class SLE {
 
     // Bestimmt die Lösung eines quadratischen Gleichungssystems Ax=b
     // Der Lösungsvektor ist aufgerundet auf zwei Nachkommastellen
@@ -51,6 +51,4 @@ public class SLE {
 
         return x;
     }
-
-
 }
