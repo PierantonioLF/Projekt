@@ -1,4 +1,5 @@
 public class Operation {
+
     /**
      Christian Leroy, 6504373
      Pierantonio La Ferrera, 4162672
@@ -28,7 +29,6 @@ public class Operation {
 
     public static Matrix add(Matrix A, Matrix B) {
         if (Check.DimAdd(A, B)) {
-
             Matrix Result = Utils.createEqualSize(A);
             int m = A.getRowNumber();
             int n = A.getColNumber();
@@ -80,16 +80,17 @@ public class Operation {
     // Bestimmt die Transponierte von A
     // A ist m x n - Matrix => A^T * B ist m x p - Matrix
     public static Matrix transpose(Matrix A) {
-        int A_RowNumber = A.getRowNumber();
-        int A_ColNumber = A.getColNumber();
-        double[][] A_Array = A.getArray();
-        Matrix result = Utils.createEqualSize(A);
-        double[][] result_Array = result.getArray();
 
-        for (int i = 0; i < A_RowNumber; i++) {
-            for (int j = 0; j < A_ColNumber; j++) {
-                result_Array[i][j] = A_Array[j][i];
+        // Speichert die Zeilen- und Spaltenzahl als Variable und erstellt eine m x n Nullmatrix
+        int rowA = A.getRowNumber();
+        int colA = A.getColNumber();
+        double[][] arrayA = A.getArray();
+        Matrix result = new Matrix (colA, rowA);
+        double[][] resultArray = result.getArray();
 
+        for (int i = 0; i < colA; i++) {
+            for (int j = 0; j < rowA; j++) {
+                resultArray[i][j] = arrayA[j][i];
             }
         }
         return result;

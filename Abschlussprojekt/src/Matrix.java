@@ -18,7 +18,7 @@ public class Matrix {
     // --------------------------
 
 
-    // Erstellt eine m x n -  Nullmatrix
+    // Erstellt eine m x n - Nullmatrix
     public Matrix(int m, int n) {
         this.array = new double[m][n];
         this.rowNumber = m;
@@ -43,12 +43,10 @@ public class Matrix {
     }
 
     public int getColNumber() {
-
         return this.colNumber;
     }
 
     public double[][] getArray() {
-
         return this.array;
     }
 
@@ -64,8 +62,6 @@ public class Matrix {
     // --------------------------
 
     public void print() {
-
-
         for (int i = 0; i < rowNumber; i++) {
             for (int j = 0; j < colNumber; j++) {
                 System.out.printf("%8.2f", array[i][j]);
@@ -73,6 +69,8 @@ public class Matrix {
             System.out.println();
         }
     }
+
+    /*
 
     public static void print(Matrix A, double[] b, double[] x) {
         System.out.println("Deine Koeffizientenmatrix ist:");
@@ -95,10 +93,6 @@ public class Matrix {
         }
         System.out.println();
     }
-
-
-
-
 
 
     public static void print(Matrix A, Matrix B, Matrix result) {
@@ -128,8 +122,6 @@ public class Matrix {
     }
 
 
-
-
     public static void print(Matrix A, double scalar, Matrix result) {
         System.out.println("Die Matrix A ist:");
         for (int i = 0; i < A.getRowNumber(); i++) {
@@ -152,8 +144,6 @@ public class Matrix {
         }
     }
 
-
-
     public static void print(Matrix A, Matrix B) {
         System.out.println("Deine Matrix ist:");
         for (int i = 0; i < A.getRowNumber(); i++) {
@@ -172,8 +162,6 @@ public class Matrix {
         }
     }
 
-
-
     public static void print(Matrix A, double k) {
         System.out.println("Deine Matrix ist:");
         for (int i = 0; i < A.getRowNumber(); i++) {
@@ -186,13 +174,6 @@ public class Matrix {
         System.out.println("\n Das Ergebnis ist: " + k);
         }
 
-
-
-
-
-
-
-
-
+        */
 
 }

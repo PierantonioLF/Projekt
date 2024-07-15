@@ -4,7 +4,7 @@
  Pierantonio La Ferrera, 4162672
  */
 
-public class Check {
+abstract class Check {
 
 
     // _____________________________________________________________________________
@@ -38,7 +38,7 @@ public class Check {
 
 
     // _________________________________________________________________________________
-    // Hilfsfunktionen, die überprüfen, ob Matrizen die gewünschte Eigenschaften  haben
+    // Hilfsfunktionen, die überprüfen, ob Matrizen die gewünschte Eigenschaften haben
     // _________________________________________________________________________________
 
     // Überprüft, ob eine Matrix A invertierbar
